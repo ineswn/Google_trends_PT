@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Trends Related Topics</title>
+  <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3769_RC01/embed_loader.js"></script>
+</head>
+<body>
+  <div id="trends-widget"></div>
+  <script type="text/javascript">
+    trends.embed.renderExploreWidget("RELATED_TOPICS", {{
+      "comparisonItem":[{{
+        "geo":"PT",
+        "time":"now 7-d"
+      }}],
+      "category":0,
+      "property":"news"
+    }}, {{
+      "exploreQuery":"date=now%207-d&geo=PT&gprop=news&hl=pt-PT",
+      "guestPath":"https://trends.google.com:443/trends/embed/"
+    }});
+  </script>
+</body>
+</html>
